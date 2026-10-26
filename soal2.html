@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum jQuery</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <h2>Praktikum jQuery</h2>
+
+    <button id="ungu">Ungu</button>
+    <button id="biru">Biru</button>
+    <button id="hijau">Hijau</button>
+
+    <button id="sembunyikan">Sembunyikan warna</button>
+    <button id="tampilkan">Tampilkan warna</button>
+
+    <br><br>
+
+    <div id="kotak" style="
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+    "></div>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#ungu").click(function() {
+                $("#kotak").css("background-color", "purple");
+            });
+
+            $("#biru").click(function() {
+                $("#kotak").css("background-color", "blue");
+            });
+
+            $("#hijau").click(function() {
+                $("#kotak").css("background-color", "green");
+            });
+
+            $("#sembunyikan").click(function() {
+                $("#kotak").hide();
+            });
+
+            $("#tampilkan").click(function() {
+                $("#kotak").show();
+            });
+
+        });
+    </script>
+
+</body>
+</html>

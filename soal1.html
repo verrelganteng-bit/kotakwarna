@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>praktikum jafaskrip</title>
+</head>
+<body>
+    <h2>praktikum jafaskrip</h2>
+
+    <form>
+        <label>Nama:</label>
+        <input type="text" id="hasilNama" readonly>
+
+        <br><br>
+
+        <label>NIM:</label>
+        <input type="text" id="hasilNim" readonly>
+
+        <br><br>
+
+        <label>Kelas:</label>
+        <input type="text" id="hasilKelas" readonly>
+    </form>
+
+    <script>
+        let nama = prompt("nama:");
+        let nim = prompt("nim:");
+        let kelas = prompt("kelas:");
+
+        document.getElementById("hasilNama").value = nama;
+        document.getElementById("hasilNim").value = nim;
+        document.getElementById("hasilKelas").value = kelas;
+    </script>
+</body>
+</html>
